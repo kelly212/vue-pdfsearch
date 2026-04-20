@@ -1,0 +1,88 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[dev]
+  publish = "dist"
+
+[dev.environment]
+  DATABASE_URL = "postgresql://neondb_owner:npg_siag8pSybt0M@ep-hidden-art-aeickdy1-pooler.c-2.us-east-2.aws.neon.tech/neondb?channel_binding=require&sslmode=verify-full"
+
+[build.environment]
+  NODE_VERSION = "20"
+  DATABASE_URL = "postgresql://neondb_owner:npg_siag8pSybt0M@ep-hidden-art-aeickdy1-pooler.c-2.us-east-2.aws.neon.tech/neondb?channel_binding=require&sslmode=verify-full"
+
+# Redirecionamentos para SPA
+
+# Adicione estas regras para EXTENSÕES ESPECÍFICAS:
+
+[[redirects]]
+  from = "/*.ico"
+  to = "/:splat.ico"
+  status = 200
+
+[[redirects]]
+  from = "/*.png"
+  to = "/:splat.png"
+  status = 200
+
+[[redirects]]
+  from = "/*.jpg"
+  to = "/:splat.jpg"
+  status = 200
+
+[[redirects]]
+  from = "/*.svg"
+  to = "/:splat.svg"
+  status = 200
+
+[[redirects]]
+  from = "/*.woff"
+  to = "/:splat.woff"
+  status = 200
+
+[[redirects]]
+  from = "/*.woff2"
+  to = "/:splat.woff2"
+  status = 200
+
+[[redirects]]
+  from = "/*.ttf"
+  to = "/:splat.ttf"
+  status = 200
+
+[[redirects]]
+  from = "/*.eot"
+  to = "/:splat.eot"
+  status = 200
+
+# SPA CATCH-ALL - SEMPRE POR ÚLTIMO!
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers para MIME types
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    X-Content-Type-Options = "nosniff"
