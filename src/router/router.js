@@ -18,12 +18,12 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-   document.title = 'COC Cirúrgico'
+   document.title = 'Pdf Search'
    const token = sessionStorage.getItem('token');
    if (to.meta.auth && !token) return '/'
 
    // título normal das páginas
-   document.title = `${to.meta?.title ?? ''}${to.meta?.title ? ' - ' : ''}COC Cirúrgico`
+   document.title = `${to.meta?.title ?? ''}${to.meta?.title ? ' - ' : ''}Pdf Search`
 });
 
 export default router
