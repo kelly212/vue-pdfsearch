@@ -1,9 +1,10 @@
 <template>
 	
 	<div class="file_list">
-		<v-list v-if="arquivos.length>0" style="background: transparent">
+		<v-list density="compact" v-if="arquivos.length>0"
+			 style="background: transparent; font-size: 12px;">
 			<v-list-subheader>Lista de arquivos</v-list-subheader>
-			<v-list-item
+			<v-list-item style="font-size: 12px;"
 			v-for="f in arquivos"
 			:key="f.name"
 			color="primary"

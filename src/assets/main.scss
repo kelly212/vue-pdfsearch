@@ -61,9 +61,9 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   overflow-y: auto !important;
-
-
-
+  
+  
+  
 }
 
 *::-webkit-scrollbar {
@@ -109,7 +109,7 @@ body, #appAddmim{  background: $cor5;}
     justify-content: center;
     align-items: center;
   }
-
+  
   .text h1 {
     color: $cor1;
     margin-top: -200px;
@@ -119,7 +119,7 @@ body, #appAddmim{  background: $cor5;}
     font-family: monospace;
     font-weight: bold;
   }
-
+  
   .text h2 {
     color: $cor6;
     font-size: 5em;
@@ -129,7 +129,7 @@ body, #appAddmim{  background: $cor5;}
     font-family: monospace;
     font-weight: bold;
   }
-
+  
   .text h3 {
     color: white;
     margin-left: 30px;
@@ -139,7 +139,7 @@ body, #appAddmim{  background: $cor5;}
     font-family: monospace;
     font-weight: bold;
   }
-
+  
   .torch {
     margin: -150px 0 0 -150px;
     width: 300px;
@@ -159,7 +159,7 @@ body, #appAddmim{  background: $cor5;}
     top: 0px;
     left: 0px;
     box-shadow: inset 0 0 50px 20px #000, 0 0 20px 20px rgba(13, 13, 10, 0.3);
-
+    
   }
 }
 
@@ -169,7 +169,7 @@ body, #appAddmim{  background: $cor5;}
   background-image: linear-gradient(130deg, rgba($cor3, 0.8) 25%, rgba($cor4, 0.8) 50%, rgba($cor5, 0.8) 100%), url("../assets/fundo (3).jpg") !important;
   background-size:cover !important;
   background-repeat: no-repeat;
-
+  
 }
 
 .login-card {
@@ -184,64 +184,49 @@ body, #appAddmim{  background: $cor5;}
   .screen{
     height:100vh;
     background: transparent !important;
-    background-image: linear-gradient(130deg, rgba($cor3, 0.85) 25%, rgba($cor4, 0.85) 50%, rgba($cor5, 0.85) 100%), url("../assets/fundo (3).jpg") !important;
+    //background-image: linear-gradient(130deg, rgba($cor3, 0.85) 25%, rgba($cor4, 0.85) 50%, rgba($cor5, 0.85) 100%), url("../assets/fundo (3).jpg") !important;
+    background-image: linear-gradient(130deg, rgba($cor3, 0.5) 25%, rgba($cor4, 0.6) 50%, rgba($cor5, 0.7) 100%), url("../assets/fundo (3).jpg") !important;
     background-size:100% 100% !important;
     background-repeat: no-repeat;
     overflow-y: scroll;
     //position: fixed;
   }
+  
 
-
-  .header{
-    //position:relative;
-    //background-image:  url("../assets/header.svg") !important;
-    //background-size:101% 100% !important;
-    //background-repeat: no-repeat;
-    //height:60vh;
-    //margin-top:-10px;
-
-    //background: linear-gradient(135deg, rgba($cor01, 0.9), rgba($cor2, 0.4), rgba($cor06, 0.3));
-    //-webkit-mask: url("../assets/header.svg") no-repeat center;
-    //-webkit-mask-size:101% 100%;
-    //mask: url("../assets/header.svg") no-repeat center;
-    //mask-size:101% 100%;
-    //height:100vh;
-  }
-
-
+  
   .header h1{
     font-size:28px;
     font-weight:700;
   }
-
+  
   .header p{
     opacity:.9;
     //max-width:260px;
   }
-
+  
   .cards{
     margin-top:-15%;
   }
   .card{
     /*height:150px;*/
     border-radius:22px;
-
+    
     background: rgba(255,255,255,0.06); /* transparência */
     backdrop-filter: blur(20px);        /* efeito glass */
     -webkit-backdrop-filter: blur(20px);
-
+    
     border:1px solid rgba(255,255,255,0.08);
-
+    
     box-shadow:
-            0 10px 30px rgba(0,0,0,0.3),
-            inset 0 1px 0 rgba(255,255,255,0.08);
-
+    0 10px 30px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+    
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
   }
-
+  
   .icon{
     width:56px;
     height:56px;
@@ -251,81 +236,81 @@ body, #appAddmim{  background: $cor5;}
     justify-content:center;
     margin-bottom:10px;
   }
-
-
+  
+  
   .card span{
     font-weight:600;
   }
-
+  
   .card{
     //background: linear-gradient(135deg, rgba($cor01, 0.9), rgba($cor2, 0.4), rgba($cor06, 0.3));
     border-radius:28px;
     padding:28px;
     backdrop-filter: blur(30px);
-
+    
     box-shadow:
-            0 25px 60px rgba(0,0,0,.15),
-            inset 0 1px 0 rgba(255,255,255,.4);
-
+    0 25px 60px rgba(0,0,0,.15),
+    inset 0 1px 0 rgba(255,255,255,.4);
+    
     transition: all .3s ease;
   }
-
+  
   .card:hover{
     transform:translateY(-6px);
   }
-
+  
   .center-col .v-row{
     height:100%;
   }
-
+  
   .center-col .v-col{
     display:flex;
   }
-
-
-.exp_ativo{
-  background: blue;
-  color: white;
-}
-
+  
+  
+  .exp_ativo{
+    background: blue;
+    color: white;
+  }
+  
   .card_table{
     border-radius:10px;
-
+    
     //background: rgba(255,255,255,0.06); /* transparência */
-    background: rgba(255, 255, 255, 0.49); /* transparência */
-    backdrop-filter: blur(20px);        /* efeito glass */
-    -webkit-backdrop-filter: blur(20px);
-
-    border:1px solid rgba(255,255,255,0.08);
-
+    background: rgba(255, 255, 255, 0.001); /* transparência */
+    backdrop-filter: blur(8px);        /* efeito glass */
+    -webkit-backdrop-filter: blur(10px);
+    
+    border:1px solid rgba(255,255,255,0.02);
+    
     box-shadow:
-            0 10px 30px rgba(0,0,0,0.3),
-            inset 0 1px 0 rgba(255,255,255,0.08);
-
-
+    0 10px 30px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+    
+    
   }
   .card_table .v-data-table{
     background: transparent;
   }
-
-
-
+  
+  
+  
 }
 
 .dialog_card .v-card--variant-elevated{
-
+  
   border-radius:10px;
-
+  
   background: rgba(255,255,255,0.06); /* transparência */
   backdrop-filter: blur(20px);        /* efeito glass */
   -webkit-backdrop-filter: blur(20px);
-
+  
   border:1px solid rgba(255,255,255,0.08);
-
+  
   box-shadow:
-          0 10px 30px rgba(0,0,0,0.3),
-          inset 0 1px 0 rgba(255,255,255,0.08);
-
+  0 10px 30px rgba(0,0,0,0.3),
+  inset 0 1px 0 rgba(255,255,255,0.08);
+  
 }
 
 iframe{
@@ -408,4 +393,19 @@ mark{
 body.resizing{
   cursor: ns-resize;
   user-select: none;
+}
+
+.v-text-field input{
+  background: transparent!important;
+}
+.v-field__overlay {
+background: $cor4!important;
+   // backdrop-filter: blur(8px)!important;        /* efeito glass */
+  //  -webkit-backdrop-filter: blur(10px)!important;
+    
+ //   border:1px solid rgba(255,255,255,0.02)!important;
+    
+    //box-shadow:
+ //   0 10px 30px rgba(0,0,0,0.3),
+//    inset 0 1px 0 rgba(255,255,255,0.08);
 }

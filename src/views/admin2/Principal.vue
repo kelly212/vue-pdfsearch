@@ -72,18 +72,19 @@
                                     
                                     <v-expansion-panels v-if="Object.keys(resultadosAgrupados).length > 0"
                                        style="background: transparent"
-                                       color="#001420"
+                                    
                                        v-model="painelAberto"
                                        variant="accordion"
+                                       density="compact"
                                        >
                                        <v-expansion-panel style="background: transparent"
                                        v-for="(grupo, arquivo) in resultadosAgrupados"
-                                       :key="arquivo"
+                                       :key="arquivo" density="compact"
                                        >
-                                       <v-expansion-panel-title>
+                                       <v-expansion-panel-title density="compact">
                                           <v-row no-gutters>
                                              <v-col cols="8">
-                                                <strong>{{ arquivo }}</strong>
+                                                <strong style="color:#03A89E; font-size: 13px;">{{ arquivo }}</strong>
                                              </v-col>
                                              <v-col cols="4" class="text-right">
                                                 <v-chip size="small" color="primary">
@@ -93,7 +94,7 @@
                                           </v-row>
                                        </v-expansion-panel-title>
                                        
-                                       <v-expansion-panel-text>
+                                       <v-expansion-panel-text density="compact">
                                           <v-list style="background: transparent">
                                              <v-list-item
                                              v-for="resultado in grupo" :value="resultado" color="orange"
@@ -102,7 +103,7 @@
                                              class="result-item"
                                              >
                                              <!--<v-list-item-content>-->
-                                                <v-list-item-title>
+                                                <v-list-item-title style="color: #20A9FD">
                                                    <strong>Página {{ resultado.pagina }}</strong>
                                                 </v-list-item-title>
                                                 <v-list-item-subtitle>
@@ -382,12 +383,12 @@ export default {
 }
 
 .result-item:hover {
-   background-color: #f5f5f5;
+   background-color: #f1f1f154;
 }
 
 .trecho-texto {
    font-size: 12px;
-   color: #666;
+   color: #ccc;
    margin-top: 5px;
 }
 
@@ -395,6 +396,7 @@ export default {
    background-color: yellow;
    color: black;
    padding: 0 2px;
+   font-weight: bold;
    border-radius: 2px;
 }
 </style>
