@@ -4,7 +4,7 @@
 		<v-list density="compact" v-if="arquivos.length>0"
 			 style="background: transparent; font-size: 12px;">
 			<v-list-subheader>Lista de arquivos</v-list-subheader>
-			<v-list-item style="font-size: 12px;"
+			<v-list-item style="font-size: 11px;"
 			v-for="f in arquivos"
 			:key="f.name"
 			color="primary"
@@ -12,21 +12,11 @@
 			rounded="shaped"
 			class="file"
 			@click="$emit('abrir',f,1)"
-			:title="f.name"
-			></v-list-item>
+			>
+						<v-list-item-title><span style="font-size: 12px">{{f.name}}</span></v-list-item-title>
+			</v-list-item>
 		</v-list>
 		
-		<!--<div-->
-		<!--v-for="f in arquivos"-->
-		<!--:key="f.name"-->
-		<!--class="file"-->
-		<!--@click="$emit('abrir',f,1)"-->
-		<!--&gt;-->
-		<!---->
-		<!--{{f.name}}-->
-		<!---->
-	<!--</div>-->
-	
 </div>
 
 </template>
@@ -45,8 +35,8 @@ export default{
 <style>
 .file_list{
 	overflow-y: scroll;
-	min-height: 70vh;
-	max-height: 100vh;
+	min-height: 50vh;
+	max-height: 75vh;
 	border-right: 1px solid #ccc;
 }
 </style>

@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       dragging: false,
-      topHeight: 500,
+      topHeight: 650,
       minTop: 80,
       minBottom: 120,
     };
@@ -98,10 +98,10 @@ export default {
 }
 
 .resizer {
-  height: 8px;
+  height: 10px;
   flex-shrink: 0;
   cursor: row-resize;
-  background: #333;
+  background: rgba(0, 20, 32, 0.49);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@ export default {
 }
 
 .resizer:hover {
-  background: #555;
+  background: #000B14;
 }
 
 .resizer i {

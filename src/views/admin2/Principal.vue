@@ -8,10 +8,10 @@
                      <v-card-text>
                         <v-row>
                            <v-col cols="12">
-                              <v-btn color="primary" @click="escolherPasta">
+                              <v-btn  color="primary" rounded  block variant="tonal" @click="escolherPasta">
                                  Selecionar pasta
                               </v-btn>
-                              <div v-if="indexando" style="color: blue; margin-top: 10px;">
+                              <div v-if="indexando" style="color: #6ed0f6; margin-top: 10px;">
                                  
                                  <div class="d-flex ga-2 align-center">
                                     <v-progress-linear
@@ -27,7 +27,7 @@
                                  </v-progress-linear>
                                  
                               </div>
-                              <p> {{cortarString(txtIndexando, 70)}} Por favor,Aguarde</p>
+                              <p style="font-size: 10px"> {{cortarString(txtIndexando, 70)}} Por favor,Aguarde</p>
                            </div>
                         </v-col>
                         <v-col cols="12" v-if="!indexando">
